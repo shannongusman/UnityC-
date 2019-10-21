@@ -445,6 +445,7 @@ GameObject:
   - component: {fileID: 1325013202}
   - component: {fileID: 1325013201}
   - component: {fileID: 1325013200}
+  - component: {fileID: 1325013204}
   m_Layer: 0
   m_Name: ball3
   m_TagString: Untagged
@@ -546,12 +547,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1325013199}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.8767, y: 2.693, z: 0}
+  m_LocalPosition: {x: -1.84, y: -3.59, z: 0}
   m_LocalScale: {x: 1.0076, y: 0.9694, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1325013204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325013199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b6f0e52b68ffca4c959c51e85526e76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myPaddle: {fileID: 1334922902}
 --- !u!1 &1334922898
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,6 +578,7 @@ GameObject:
   - component: {fileID: 1334922900}
   - component: {fileID: 1334922899}
   - component: {fileID: 1334922902}
+  - component: {fileID: 1334922903}
   m_Layer: 0
   m_Name: Paddle
   m_TagString: Untagged
@@ -678,3 +693,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b64e297fc5b66fd4fb9b28b3548b8da5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  screenWidthInUnits: 16
+--- !u!114 &1334922903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334922898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b64e297fc5b66fd4fb9b28b3548b8da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  screenWidthInUnits: 16
