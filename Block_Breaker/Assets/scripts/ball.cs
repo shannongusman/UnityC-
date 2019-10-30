@@ -6,6 +6,9 @@ public class ball : MonoBehaviour
 {
     [SerializeField]Paddle myPaddle;
 
+    //array declaration
+    [SerializeField] AudioClip[] ballSounds ;
+
     Vector2 paddleToBallDistance;
 
     bool hasStarted = false;
@@ -27,18 +30,30 @@ public class ball : MonoBehaviour
         if (!hasStarted) //hasStarted == false
         {
             LockBallToPaddle();
-
-            if (Input.GetMouseButtonDown(0)) //left click
-            {
-                hasStarted = true;
-                //shoot the ball
-                GetComponent<Rigidbody2D>().velocity = new Vector2(2f, 15f);
-            }
+            LaunchBallOnClick();
         }
-        
-
-        
     }
+    private void OnCollisionEnter2D(Collision2D coll)
+    {
+        //System.Random used only in csharp
+        //generte random number
+        int randomNumber = Random.Range(0,ballSounds.Length);
+        //save random audio in clip
+        AudioClip clip = ballSounds[randomNumber];
+
+        GetComponent<AudioSource>().Play();
+    }
+
+    private void LaunchBallOnClick()
+    {
+        if (Input.GetMouseButtonDown(0)) //left click
+        {
+            hasStarted = true;
+            //shoot the ball
+            GetComponent<Rigidbody2D>().velocity = new Vector2(2f, 15f);
+        }  
+    }
+
 
     private void LockBallToPaddle()
     {
