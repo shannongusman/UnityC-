@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 252147325877139319}
   - component: {fileID: 252147325877139317}
   - component: {fileID: 252147325877139306}
-  - component: {fileID: 252147325877139307}
   m_Layer: 0
   m_Name: Block Square
   m_TagString: Untagged
@@ -121,15 +120,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f5aa095a9bb2d741a1998b728724354, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &252147325877139307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 252147325877139318}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f5aa095a9bb2d741a1998b728724354, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  breakSound: {fileID: 8300000, guid: b4141c979708ed248b7a522de4be92f0, type: 3}
